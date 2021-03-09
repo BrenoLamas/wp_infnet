@@ -2,8 +2,8 @@
 - hosts: wordpress
   remote_user: blamas
   become: yes
-  rules:
-  - mysql
-  - php
+  roles:
   - server
+  - php
+  - mysql
   - wordpress
