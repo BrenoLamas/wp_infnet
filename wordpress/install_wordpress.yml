@@ -1,0 +1,9 @@
+---
+- hosts: wordpress
+  remote_user: blamas
+  become: yes
+  rules:
+  - mysql
+  - php
+  - server
+  - wordpress
